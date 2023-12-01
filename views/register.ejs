@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="main">
+
+    <div class="containerLogin">
+        <div class="subContainerLogin"><h1><a href="/login">Login</a></h1></div>
+        <div class="subContainerLogin"><h1><a href="/register">Register</a></h1></div>
+    </div>
+   
+    <form action="/register" method="post">
+        <div class="container2">
+
+            <div class="subContainer2">
+                <h3>
+                    <input type="text" placeholder="UserName" id="username" name="username">
+                </h3>
+            </div>
+
+            <div class="subContainer2">
+                <h3>
+                    <input type="password" name="password" id="password", placeholder="Password">
+                </h3>
+            </div>
+            <div class="subContainer2">
+                <h3>
+                    <input type="password" name="repassword" id="repassword", placeholder="Re-Enter Password">
+                </h3>
+            </div>
+            <div class="subContainer2">
+                <button type="submit" style="width: 100px; height: 30px" >Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<%- include("partials/footer.ejs"); %>
